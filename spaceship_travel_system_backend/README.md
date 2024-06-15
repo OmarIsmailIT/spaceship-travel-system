@@ -44,13 +44,14 @@ Welcome to the Spaceship Travel System API! This API is designed to manage the o
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/spaceship-travel-system-api.git
+   git clone https://github.com/OmarIsmailIT/spaceship-travel-system.git
 
    ```
 
 2. **Install Dependencies:**
 
    ```bash
+   cd spaceship-travel-system
    cd spaceship-travel-system-api
    npm install
 
