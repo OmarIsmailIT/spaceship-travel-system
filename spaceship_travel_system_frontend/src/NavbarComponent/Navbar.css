@@ -1,0 +1,25 @@
+/* Styles for the navbar */
+.navbar {
+    background-color: var(--bs-body-tertiary);
+  }
+  /* Styles for the nav links */
+  .nav-link {
+    color: #837f7f;
+    transition: color 0.3s ease;
+  }
+  
+  /* Styles for the hover effect on nav links */
+  .nav-link:hover {
+    color: #616a74;
+  }
+  
+  /* Styles for the active nav link */
+  .nav-link.active {
+    font-weight:500;
+    color: #007bff;
+  }
+  
+  /* Additional hover color class */
+  .nav-link-hover-color:hover {
+    color: #384450;
+  }

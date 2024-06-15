@@ -1,0 +1,15 @@
+/* Define styles for the entire app */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Set a background image and theme colors */
+  .App {
+    background: url('./assets/pexels-nivdex-796206.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    color: #ffffff;
+  }
