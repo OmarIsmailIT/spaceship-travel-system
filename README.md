@@ -21,7 +21,6 @@ The Spaceship Travel System is a web application designed to manage a fleet of s
 - Missions: Plan and manage missions to different destinations. Each mission can be viewed individually with details about its crew, spaceship, and destination.
 - Authentication: Secure user authentication system for accessing administrative functionalities.
 
-- 
 ---
 
 #### Technologies Used:
