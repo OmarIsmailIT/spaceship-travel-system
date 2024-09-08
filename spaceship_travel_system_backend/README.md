@@ -65,8 +65,8 @@ Welcome to the Spaceship Travel System API! This API is designed to manage the o
 
 4. **Environment Variables:**
 
-- Create a `.env` file in the root directory.
-- Add the following environment variables:
+- Open the `.env` file in the root directory.
+- Replace the values with your own credentials:
   ```
   DB_HOST=localhost
   DB_USER=root
