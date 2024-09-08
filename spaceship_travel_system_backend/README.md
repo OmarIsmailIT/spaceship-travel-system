@@ -61,6 +61,7 @@ Welcome to the Spaceship Travel System API! This API is designed to manage the o
 
 - Make sure you have MySQL installed and running on your local machine.
 - Import the database schema from the `spaceship travel system SQL script.sql` file.
+- Run the script file to create the database and the tables.
 
 4. **Environment Variables:**
 
