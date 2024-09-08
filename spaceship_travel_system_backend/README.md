@@ -67,6 +67,7 @@ Welcome to the Spaceship Travel System API! This API is designed to manage the o
 
 - Open the `.env` file in the root directory.
 - Replace the values with your own credentials:
+  
   ```
   DB_HOST=localhost
   DB_USER=root
