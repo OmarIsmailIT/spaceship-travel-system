@@ -47,13 +47,14 @@ Before you begin, ensure you have the following installed on your machine:
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/spaceship-travel-system-api.git
+   git clone https://github.com/OmarIsmailIT/spaceship-travel-system.git
 
    ```
 
 2. **Install Dependencies:**
 
    ```bash
+   cd spaceship-travel-system
    cd spaceship-travel-system-frontend
    npm install
 
