@@ -1,9 +1,9 @@
 import axios from "axios";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate , useParams } from "react-router-dom";
 
 function CreateCrewMember() {
-  const [spaceshipId, setNameSpaceshipId] = useState("");
+  const [spaceshipId, setSpaceshipId] = useState("");
   const [name, setName] = useState("");
   const [role, setRole] = useState("");
   const [experienceLevel, setExperienceLevel] = useState("");
@@ -11,8 +11,24 @@ function CreateCrewMember() {
   const navigate = useNavigate();
   const { id } = useParams();
 
+  // Fetch crew member data when component mounts
+  useEffect(() => {
+    axios
+      .get(`http://localhost:3000/api/v1/crewmembers/${id}`)
+      .then((res) => {
+        const crewMember = res.data;
+        setSpaceshipId(crewMember.spaceship_id)
+        setName(crewMember.name);
+        setRole(crewMember.role);
+        setExperienceLevel(crewMember.experience_level);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, [id]);
+
   function handleSpaceshipId(event) {
-    setNameSpaceshipId(event.target.value);
+    setSpaceshipId(event.target.value);
   }
   function handleOnChangeName(event) {
     setName(event.target.value);

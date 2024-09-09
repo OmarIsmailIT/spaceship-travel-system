@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate , useParams } from "react-router-dom";
 
 function CreateMission() {
@@ -11,6 +11,21 @@ function CreateMission() {
   const navigate = useNavigate();
   const { id } = useParams();
 
+    // Fetch mission data when component mounts
+    useEffect(() => {
+      axios
+        .get(`http://localhost:3000/api/v1/missions/${id}`)
+        .then((res) => {
+          const mission = res.data;
+          setSpaceshipId(mission.spaceship_id)
+          setDestination(mission.destination);
+          setLaunchDate(mission.launch_date.slice(0, 10));
+          setDuration(mission.duration);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }, [id]);
 
   function handleSpaceshipId(event) {
     setSpaceshipId(event.target.value);

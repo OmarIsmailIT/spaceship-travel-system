@@ -5,6 +5,9 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
+      <NavLink to="/" className="navbar-brand">
+          Spaceship Travel System
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"
@@ -20,10 +23,10 @@ function Navbar() {
           className="collapse navbar-collapse "
           id="navbarTogglerDemo01"
         >
-          <NavLink to="/" className="navbar-brand">
+          {/* <NavLink to="/" className="navbar-brand">
             Spaceship Travel System
-          </NavLink>
-          <ul className="navbar-nav">
+          </NavLink> */}
+          <ul className="navbar-nav mb-2 mb-lg-0">
             <li className="nav-item">
               <NavLink
                 to="/show-spaceship"

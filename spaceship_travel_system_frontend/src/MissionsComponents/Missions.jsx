@@ -50,7 +50,7 @@ function Missions() {
             Add +
           </Link>
 
-          <h3 className="mx-auto">Missions</h3>
+          <h3 className="mx-auto text-black">Missions</h3>
         </div>
         <table className="table table-responsive">
           <thead>

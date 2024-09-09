@@ -50,7 +50,7 @@ function CrewMember() {
             Add +
           </Link>
 
-          <h3 className="mx-auto">Crew Members</h3>
+          <h3 className="mx-auto text-black">Crew Members</h3>
         </div>
         <table className="table table-responsive">
           <thead>

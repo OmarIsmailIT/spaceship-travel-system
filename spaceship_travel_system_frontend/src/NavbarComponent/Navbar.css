@@ -1,6 +1,7 @@
 /* Styles for the navbar */
 .navbar {
     background-color: var(--bs-body-tertiary);
+  
   }
   /* Styles for the nav links */
   .nav-link {

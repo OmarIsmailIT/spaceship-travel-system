@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
 function UpdateSpaceship() {
@@ -10,6 +10,24 @@ function UpdateSpaceship() {
   const [errors, setErrors] = useState({});
   const navigate = useNavigate();
   const { id } = useParams();
+
+
+  // Fetch spaceship data when component mounts
+  useEffect(() => {
+    axios
+      .get(`http://localhost:3000/api/v1/spaceships/${id}`)
+      .then((res) => {
+        const spaceship = res.data;
+        setName(spaceship.name);
+        setCapacity(spaceship.capacity);
+        setLaunchDate(spaceship.launch_date.slice(0, 10)); // Adjust date format
+        setStatus(spaceship.status);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, [id]);
+
 
   function handelOnChangeName(event) {
     setName(event.target.value);

@@ -60,7 +60,7 @@ function Spaceship() {
           <Link to="/add-spaceship" className="btn btn-success mb-3">
             Add +
           </Link>
-          <h3 className="mx-auto">Spaceships</h3>
+          <h3 className="mx-auto text-black">Spaceships</h3>
         </div>
         <table className="table table-responsive">
           <thead>
